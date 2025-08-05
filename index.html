@@ -1,0 +1,28 @@
+<!-- Track Time: Use setInterval to increment time (milliseconds, seconds, minutes).
+
+Start: Begin incrementing time if not already running.
+
+Stop: Pause the interval.
+
+Reset: Clear interval and reset time to 0. -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STOPWATCH</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="stopwatch">
+            <h1 id="displayTime">00:00:00</h1>
+            <div class="buttons">
+                    <img src="img/pause.png" onclick="watchstop()">
+                    <img src="img/play.png" onclick="startwatch()">
+                    <img src="img/reset.png" onclick="watchreset()">
+            </div>
+        </div>
+        <script src="watch.js"></script>
+    </body>
+</html>
